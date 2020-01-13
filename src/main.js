@@ -13,6 +13,9 @@ Vue.directive("border",function(el, binding){
     el.style.borderRadius = "0.5rem"
   }
 })
+Vue.filter("upperCase", function(value){
+  return value.toUpperCase();
+})
 
 new Vue({
   render: h => h(App),
